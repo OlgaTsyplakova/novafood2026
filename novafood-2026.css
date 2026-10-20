@@ -678,6 +678,54 @@ li + li {
   overflow-wrap: anywhere;
 }
 
+/* ── Checklisten (Administration) ────────────────────── */
+
+.check-hint {
+  color: var(--gray);
+  font-size: 0.8rem;
+  margin: -6px 0 14px;
+}
+
+ul.checklist {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.checklist li {
+  align-items: flex-start;
+  display: flex;
+  gap: 10px;
+}
+
+ul.checklist input[type="checkbox"] {
+  accent-color: var(--orange);
+  cursor: pointer;
+  flex: 0 0 auto;
+  height: 18px;
+  margin: 3px 0 0;
+  width: 18px;
+}
+
+ul.checklist .check-body {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+ul.checklist .check-label {
+  cursor: pointer;
+  display: inline;
+  margin: 0;
+}
+
+ul.checklist li.done > .check-body > .check-label {
+  color: #9ca3af;
+  text-decoration: line-through;
+}
+
+ul.checklist ul.checklist {
+  margin-top: 6px;
+}
+
 .name-list {
   color: var(--ink);
   font-weight: 600;
