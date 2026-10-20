@@ -248,6 +248,15 @@ main {
   margin-bottom: 10px;
 }
 
+/* ── Teil-Umschalter ─────────────────────────────────── */
+
+.part-switch {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
 /* ── Hero ────────────────────────────────────────────── */
 
 .hero {
@@ -663,6 +672,10 @@ ul {
 
 li + li {
   margin-top: 6px;
+}
+
+.split-grid li {
+  overflow-wrap: anywhere;
 }
 
 .name-list {
